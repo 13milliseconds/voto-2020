@@ -1,0 +1,21 @@
+body{
+    min-height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        min-height: 100vh;
+
+        img{
+            max-width: 500px;
+        }
+
+        h1{
+            margin-top: 20px;
+            font-size: 2em;
+        }
+    }
+}

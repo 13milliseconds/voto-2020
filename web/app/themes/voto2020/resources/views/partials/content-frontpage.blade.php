@@ -12,6 +12,8 @@
                     <h3>{{ $video->post_name }}</h3>
                     @if($post_status == 'publish')
                         </a>
+                        @else
+                        <h6>Coming Soon</h6>
                     @endif
                 </div>
             </div>

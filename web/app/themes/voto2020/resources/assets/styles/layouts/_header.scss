@@ -1,7 +1,18 @@
-.banner .nav li {
-  @extend .nav-item;
+.banner .nav {
+  a {
+    @extend .nav-link;
+  }
+
+  li {
+    @extend .nav-item;
+  }
 }
 
-.banner .nav a {
-  @extend .nav-link;
+.banner{
+  padding: $grid-gutter / 2;
+  text-align: center;
+
+  img{
+    max-width: 150px;
+  }
 }

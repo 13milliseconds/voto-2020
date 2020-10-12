@@ -1,0 +1,60 @@
+.home{
+    .state{
+        height: 100vh;
+        background-color: theme-color(yellow);
+        color: theme-color(purple);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child{
+            background-color: theme-color(purple);
+            color: theme-color(pink);
+        }
+        
+        &:last-child{
+            background-color: theme-color(pink);
+            color: theme-color(yellow);
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    #mainContent{
+        .wp-block-columns{
+            @extend .container;
+            margin-bottom: 0;
+
+            .wp-block-column{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+
+                h3{
+                    color: theme-color(red);
+                }
+
+                .wp-block-image{
+                    padding-top: $grid-gutter;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .wp-block-group{
+            background-image: url('../images/landscape.jpg');
+            background-color: theme-color(black);
+            color: theme-color(white);
+            padding: $grid-gutter * 4 0;
+            text-align: center;
+
+            .wp-block-group__inner-container{
+                @extend .container;
+            }
+        }
+    }
+}

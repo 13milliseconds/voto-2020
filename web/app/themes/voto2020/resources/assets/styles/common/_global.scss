@@ -1,6 +1,7 @@
 body{
     min-height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Franklin Gothic', sans-serif;
+    font-size: 18px;
 }
 
 .wp-block-embed__wrapper{
@@ -16,4 +17,25 @@ body{
         top: 0;
         left: 0;
     }
+}
+
+// Fonts
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Book.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Book.woff') format('woff'),
+        url('../fonts/FranklinGothic-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Demi.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Demi.woff') format('woff'),
+        url('../fonts/FranklinGothic-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }

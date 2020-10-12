@@ -4,9 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   @php wp_head() @endphp
 
-  {{-- Google Font --}}
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
   {{-- Favicon --}}
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/favicon/apple-icon-57x57.png')">
   <link rel="apple-touch-icon" sizes="60x60" href="@asset('images/favicon/apple-icon-60x60.png')">

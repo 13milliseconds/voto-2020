@@ -1,6 +1,12 @@
 .single{
     article{
         margin-bottom: $grid-gutter;
+
+        h1{
+            color: theme-color(pink);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
     }
 
     #player{
@@ -28,9 +34,13 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 50px 0 50px 100px;
+            border-width: 25px 0 25px 50px;
             border-color: transparent transparent transparent theme-color(white);
             cursor: pointer;
+            
+            @include media-breakpoint-up(md){
+                border-width: 50px 0 50px 100px;
+            }
         }
 
         &:hover{

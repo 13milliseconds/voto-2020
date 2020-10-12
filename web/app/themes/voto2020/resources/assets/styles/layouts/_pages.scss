@@ -1,16 +1,35 @@
 .home{
     .state{
-        height: 100vh;
         background-color: theme-color(yellow);
         color: theme-color(purple);
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+
+        .wrap{
+            padding: $grid-gutter 20px;
+        }
+
+        img{
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto $grid-gutter / 2;
+        }
+
+        @include media-breakpoint-up(lg){
+            height: 100vh;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         &:first-child{
             background-color: theme-color(purple);
-            color: theme-color(pink);
+            padding-top: $grid-gutter * 2;
+
+            a{
+                color: theme-color(pink);
+            }
         }
         
         &:last-child{
@@ -36,6 +55,7 @@
 
                 h3{
                     color: theme-color(red);
+                    margin-top: $grid-gutter;
                 }
 
                 .wp-block-image{
@@ -48,12 +68,17 @@
         .wp-block-group{
             background-image: url('../images/landscape.jpg');
             background-color: theme-color(black);
+            background-size: cover;
             color: theme-color(white);
-            padding: $grid-gutter * 4 0;
+            padding: $grid-gutter * 2 0;
             text-align: center;
-
+            
             .wp-block-group__inner-container{
                 @extend .container;
+            }
+            
+            @include media-breakpoint-up(lg){
+                padding: $grid-gutter * 4 0;
             }
         }
     }

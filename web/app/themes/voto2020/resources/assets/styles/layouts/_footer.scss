@@ -1,7 +1,7 @@
 footer.content-info{
     background: theme-color(black);
     color: theme-color(white);
-    padding: $grid-gutter;
+    padding: $grid-gutter 0;
     text-align: center;
 
     h3{
@@ -23,12 +23,20 @@ footer.content-info{
 
 #partners{
     .wrap{
-        display: flex;
-        justify-content: center;
+        
 
         img{
+            margin-bottom: $grid-gutter;
             width: 200px;
-            margin: 0 $grid-gutter;
+        }
+
+        @include media-breakpoint-up(lg){
+            display: flex;
+            justify-content: center;
+
+            img{
+                margin: 0 $grid-gutter;
+            }
         }
     }
 }

@@ -19,6 +19,10 @@ body{
     }
 }
 
+.wp-block-image img{
+    height: auto;
+}
+
 // Fonts
 @font-face {
     font-family: 'Franklin Gothic';

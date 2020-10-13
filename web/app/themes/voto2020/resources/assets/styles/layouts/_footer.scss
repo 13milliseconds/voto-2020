@@ -24,11 +24,11 @@ footer.content-info{
 
 #partners{
     margin-top: $grid-gutter;
-    
+
     .wrap{
         img{
             margin-bottom: $grid-gutter;
-            max-height: 100px;
+            max-height: 80px;
             width: auto;
         }
 
@@ -37,7 +37,7 @@ footer.content-info{
             justify-content: center;
 
             img{
-                margin: 0 $grid-gutter;
+                margin: 0 $grid-gutter / 2;
             }
         }
     }

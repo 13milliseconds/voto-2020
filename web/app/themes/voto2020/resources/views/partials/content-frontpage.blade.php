@@ -3,7 +3,7 @@
         <div class="row">
         @foreach ($videos as $video)
             @php $post_status = $video->post_status @endphp
-            <div class="col-md-4 {{ $post_status }} state">
+            <div class="col-md-4 {{ $post_status }} {{ $video->post_name }} state">
                 <div class="wrap">
                     @if($post_status == 'publish')
                         <a href="{{ the_permalink($video->ID) }}">

@@ -5,10 +5,11 @@ footer.content-info{
     text-align: center;
 
     h3{
+        font-size: 1.3em;
         color: theme-color(yellow);
         text-transform: uppercase;
         font-weight: 600;
-        margin: $grid-gutter 0 $grid-gutter / 2;
+        margin-bottom: $grid-gutter / 2;
     }
 
     a{
@@ -22,12 +23,13 @@ footer.content-info{
 }
 
 #partners{
+    margin-top: $grid-gutter;
+    
     .wrap{
-        
-
         img{
             margin-bottom: $grid-gutter;
-            width: 200px;
+            max-height: 100px;
+            width: auto;
         }
 
         @include media-breakpoint-up(lg){

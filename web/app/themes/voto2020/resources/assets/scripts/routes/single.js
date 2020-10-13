@@ -1,8 +1,13 @@
 export default {
   init() {
     // JavaScript to be fired on the home page
+    $('.play').hover(function () {
+      $('#player').addClass('hover');
+     }, function () { 
+      $('#player').removeClass('hover');
+    });
     $('#player').click(function () { 
-      $('#player .video').addClass('active');
+      $('#player').addClass('active');
     });
   },
   finalize() {

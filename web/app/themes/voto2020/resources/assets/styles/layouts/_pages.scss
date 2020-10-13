@@ -1,3 +1,9 @@
+.error404{
+    & > .wrap{
+        margin-top: $grid-gutter * 3;
+    }
+}
+
 .home{
     #videos{
         .container{

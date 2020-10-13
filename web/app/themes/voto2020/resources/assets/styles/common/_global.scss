@@ -2,6 +2,10 @@ body{
     min-height: 100%;
     font-family: 'Franklin Gothic', sans-serif;
     font-size: 18px;
+
+    & > .wrap{
+        min-height: 100vh;
+    }
 }
 
 .wp-block-embed__wrapper{

@@ -12,18 +12,28 @@
     #player{
         margin: $grid-gutter * 3 0 $grid-gutter;
         height: 0;
-        padding-top: 56.4%;
+        padding-top: 56.25%;
         overflow: hidden;
         position: relative;
+        background: theme-color(black);
 
         img{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            min-height: 100%;
             max-width: 100%;
-            transition: .5s;
+            width: auto;
+            transition: 1s;
             cursor: pointer;
+        }
+
+        &.hover{
+            img{
+                opacity: .8;
+                transform: translate(-50%, -50%) scale(1.05);
+            }
         }
         
         .play{
@@ -31,21 +41,36 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 25px 0 25px 50px;
-            border-color: transparent transparent transparent theme-color(white);
             cursor: pointer;
-            
-            @include media-breakpoint-up(md){
-                border-width: 50px 0 50px 100px;
-            }
-        }
 
-        &:hover{
-            img{
-                transform: translate(-50%, -50%) scale(1.05);
+            // Spin animation
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+            
+            .stroke-solid {
+                stroke-dashoffset: 0;
+                stroke-dashArray: 300;
+                stroke-width: 4px;
+                transition: stroke-dashoffset 1s ease, 
+                            opacity 1s ease;
+            }
+            
+            .icon {
+                transform: scale(.8);
+                transform-origin: 50% 50%;
+                transition: transform 200ms ease-out;
+            }
+            
+            // Hover
+            #play:hover {
+                .stroke-solid {
+                opacity: 1;
+                stroke-dashoffset: 300;
+                }
+                .icon {
+                transform: scale(.9);
+                }
             }
         }
 
@@ -57,13 +82,21 @@
             width: 100%;
             height: 100%;
 
-            &.active{
-                display: block;
-            }
+            
 
             iframe{
                 width: 100%;
                 height: 100%;
+            }
+        }
+
+        &.active{
+            .play,
+            img{
+                display: none;
+            }
+            .video{
+                display: block;
             }
         }
     }

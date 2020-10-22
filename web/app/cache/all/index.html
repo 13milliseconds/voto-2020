@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- This site is optimized with the Yoast SEO plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>VOTO 2020</title>
+<meta name="description" content="A documentary project profiling distinct voices in the Latino community and their work and passion to empower other Latinos to become politically active and vote." />
+<meta name="robots" content="noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="VOTO 2020" />
+<meta property="og:description" content="A documentary project profiling distinct voices in the Latino community and their work and passion to empower other Latinos to become politically active and vote." />
+<meta property="og:url" content="http://voto-2020.test/" />
+<meta property="og:site_name" content="VOTO 2020" />
+<meta property="article:modified_time" content="2020-10-14T22:40:15+00:00" />
+<meta property="og:image" content="http://voto-2020.test/app/uploads/2020/10/FB_share.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"http://voto-2020.test/#website","url":"http://voto-2020.test/","name":"VOTO 2020","description":"","potentialAction":[{"@type":"SearchAction","target":"http://voto-2020.test/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"http://voto-2020.test/#primaryimage","inLanguage":"en-US","url":"http://voto-2020.test/app/uploads/2020/10/myvote-myvoice.png"},{"@type":"WebPage","@id":"http://voto-2020.test/#webpage","url":"http://voto-2020.test/","name":"VOTO 2020","isPartOf":{"@id":"http://voto-2020.test/#website"},"primaryImageOfPage":{"@id":"http://voto-2020.test/#primaryimage"},"datePublished":"2020-10-08T10:53:39+00:00","dateModified":"2020-10-14T22:40:15+00:00","description":"A documentary project profiling distinct voices in the Latino community and their work and passion to empower other Latinos to become politically active and vote.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["http://voto-2020.test/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/voto-2020.test\/wp\/wp-includes\/js\/wp-emoji.js?ver=5.5.1","twemoji":"http:\/\/voto-2020.test\/wp\/wp-includes\/js\/twemoji.js?ver=5.5.1"}};
+/**
+* @output wp-includes/js/wp-emoji-loader.js
+*/
+( function( window, document, settings ) {
+var src, ready, ii, tests;
+// Create a canvas element for testing native browser support of emoji.
+var canvas = document.createElement( 'canvas' );
+var context = canvas.getContext && canvas.getContext( '2d' );
+/**
+* Checks if two sets of Emoji characters render the same visually.
+*
+* @since 4.9.0
+*
+* @private
+*
+* @param {number[]} set1 Set of Emoji character codes.
+* @param {number[]} set2 Set of Emoji character codes.
+*
+* @return {boolean} True if the two sets render the same.
+*/
+function emojiSetsRenderIdentically( set1, set2 ) {
+var stringFromCharCode = String.fromCharCode;
+// Cleanup from previous test.
+context.clearRect( 0, 0, canvas.width, canvas.height );
+context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+var rendered1 = canvas.toDataURL();
+// Cleanup from previous test.
+context.clearRect( 0, 0, canvas.width, canvas.height );
+context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+var rendered2 = canvas.toDataURL();
+return rendered1 === rendered2;
+}
+/**
+* Detects if the browser supports rendering emoji or flag emoji.
+*
+* Flag emoji are a single glyph made of two characters, so some browsers
+* (notably, Firefox OS X) don't support them.
+*
+* @since 4.2.0
+*
+* @private
+*
+* @param {string} type Whether to test for support of "flag" or "emoji".
+*
+* @return {boolean} True if the browser can render emoji, false if it cannot.
+*/
+function browserSupportsEmoji( type ) {
+var isIdentical;
+if ( ! context || ! context.fillText ) {
+return false;
+}
+/*
+* Chrome on OS X added native emoji rendering in M41. Unfortunately,
+* it doesn't work when the font is bolder than 500 weight. So, we
+* check for bold rendering support to avoid invisible emoji in Chrome.
+*/
+context.textBaseline = 'top';
+context.font = '600 32px Arial';
+switch ( type ) {
+case 'flag':
+/*
+* Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
+* but has landed in Twemoji early, so we can add support for it, too.
+*
+* To test for support, we try to render it, and compare the rendering to how it would look if
+* the browser doesn't render it correctly (white flag emoji + transgender symbol).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[ 0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F ],
+[ 0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F ]
+);
+if ( isIdentical ) {
+return false;
+}
+/*
+* Test for UN flag compatibility. This is the least supported of the letter locale flags,
+* so gives us an easy test for full support.
+*
+* To test for support, we try to render it, and compare the rendering to how it would look if
+* the browser doesn't render it correctly ([U] + [N]).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+);
+if ( isIdentical ) {
+return false;
+}
+/*
+* Test for English flag compatibility. England is a country in the United Kingdom, it
+* does not have a two letter locale code but rather an five letter sub-division code.
+*
+* To test for support, we try to render it, and compare the rendering to how it would look if
+* the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+*/
+isIdentical = emojiSetsRenderIdentically(
+[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+);
+return ! isIdentical;
+case 'emoji':
+/*
+* So easy, even a baby could do it!
+*
+*  To test for Emoji 13 support, try to render a new emoji: Man Feeding Baby.
+*
+* The Man Feeding Baby emoji is a ZWJ sequence combining 👨 Man, a Zero Width Joiner and 🍼 Baby Bottle.
+*
+* 0xD83D, 0xDC68 == Man emoji.
+* 0x200D == Zero-Width Joiner (ZWJ) that links the two code points for the new emoji or
+* 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+* 0xD83C, 0xDF7C == Baby Bottle.
+*
+* When updating this test for future Emoji releases, ensure that individual emoji that make up the
+* sequence come from older emoji standards.
+*/
+isIdentical = emojiSetsRenderIdentically(
+[0xD83D, 0xDC68, 0x200D, 0xD83C, 0xDF7C],
+[0xD83D, 0xDC68, 0x200B, 0xD83C, 0xDF7C]
+);
+return ! isIdentical;
+}
+return false;
+}
+/**
+* Adds a script to the head of the document.
+*
+* @ignore
+*
+* @since 4.2.0
+*
+* @param {Object} src The url where the script is located.
+* @return {void}
+*/
+function addScript( src ) {
+var script = document.createElement( 'script' );
+script.src = src;
+script.defer = script.type = 'text/javascript';
+document.getElementsByTagName( 'head' )[0].appendChild( script );
+}
+tests = Array( 'flag', 'emoji' );
+settings.supports = {
+everything: true,
+everythingExceptFlag: true
+};
+/*
+* Tests the browser support for flag emojis and other emojis, and adjusts the
+* support settings accordingly.
+*/
+for( ii = 0; ii < tests.length; ii++ ) {
+settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+if ( 'flag' !== tests[ ii ] ) {
+settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+}
+}
+settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+// Sets DOMReady to false and assigns a ready function to settings.
+settings.DOMReady = false;
+settings.readyCallback = function() {
+settings.DOMReady = true;
+};
+// When the browser can not render everything we need to load a polyfill.
+if ( ! settings.supports.everything ) {
+ready = function() {
+settings.readyCallback();
+};
+/*
+* Cross-browser version of adding a dom ready event.
+*/
+if ( document.addEventListener ) {
+document.addEventListener( 'DOMContentLoaded', ready, false );
+window.addEventListener( 'load', ready, false );
+} else {
+window.attachEvent( 'onload', ready );
+document.attachEvent( 'onreadystatechange', function() {
+if ( 'complete' === document.readyState ) {
+settings.readyCallback();
+}
+} );
+}
+src = settings.source || {};
+if ( src.concatemoji ) {
+addScript( src.concatemoji );
+} else if ( src.wpemoji && src.twemoji ) {
+addScript( src.twemoji );
+addScript( src.wpemoji );
+}
+}
+} )( window, document, window._wpemojiSettings );
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='http://voto-2020.test/wp/wp-includes/css/dist/block-library/style.css?ver=5.5.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sage/main.css-css'  href='http://voto-2020.test/app/themes/voto2020/dist/styles/main.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//voto-2020.test/app/cache/wpfc-minified/drqn5u52/6f5qy.css" media="all"/>
+<script src='//voto-2020.test/app/cache/wpfc-minified/6nkmp3l9/6f5qy.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://voto-2020.test/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script> -->
+<link rel="https://api.w.org/" href="http://voto-2020.test/wp-json/" /><link rel="alternate" type="application/json" href="http://voto-2020.test/wp-json/wp/v2/pages/16" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://voto-2020.test/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://voto-2020.test/wp/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel='shortlink' href='http://voto-2020.test/' />
+<link rel="alternate" type="application/json+oembed" href="http://voto-2020.test/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fvoto-2020.test%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://voto-2020.test/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fvoto-2020.test%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74357159-24"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-74357159-24');
+</script>
+<script src="https://kit.fontawesome.com/3c7d531bb6.js" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="57x57" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="http://voto-2020.test/app/themes/voto2020/dist/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body class="home page-template-default page page-id-16 app-data index-data singular-data page-data page-16-data page-voto-2020-data front-page-data">
+<header class="banner">
+<div class="container">
+<a class="brand" href="http://voto-2020.test/"><img src="http://voto-2020.test/app/themes/voto2020/dist/images/voto2020-logo.png" /></a>
+<div class="social">
+<a target="_blank" href="https://instagram.com/voto2020stories"><i class="fab fa-instagram"></i></a>
+<a target="_blank" href="https://facebook.com/voto2020stories"><i class="fab fa-facebook-square"></i></a>
+<a target="_blank" href="https://twitter.com/voto2020stories"><i class="fab fa-twitter-square"></i></a>
+</div>  </div>
+</header>
+<div class="wrap" role="document">
+<div class="content">
+<main class="main">
+<section id="videos">
+<div class="container">
+<div class="row">
+<div class="col-md-4 publish arizona state">
+<div class="wrap">
+<a href="http://voto-2020.test/arizona/">
+<img class="thumbnail" src="http://voto-2020.test/app/uploads/2020/10/arizona_thumb.png" />
+<h3>arizona</h3>
+</a>
+</div>
+</div>
+<div class="col-md-4 publish texas state">
+<div class="wrap">
+<a href="http://voto-2020.test/texas/">
+<img class="thumbnail" src="http://voto-2020.test/app/uploads/2020/10/texas-thumb-1.png" />
+<h3>texas</h3>
+</a>
+</div>
+</div>
+<div class="col-md-4 future florida state">
+<div class="wrap">
+<img class="thumbnail" src="http://voto-2020.test/app/uploads/2020/10/florida_thumb.png" />
+<h3>florida</h3>
+<h6>Coming Soon</h6>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="mainContent">
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<h3><strong>Can we get Latino communities out to vote?</strong></h3>
+<p>32 million Latinos will be eligible to vote in 2020. They are expected for the first time to be the nation’s <a rel="noreferrer noopener" href="https://www.pewsocialtrends.org/essay/an-early-look-at-the-2020-electorate/" target="_blank">largest racial or ethnic minority</a> in a U.S. presidential election as they will account for 13.3% of all eligible voters. The Latino vote could now, more than ever, be a decisive force in the future of the country.</p>
+</div>
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img loading="lazy" width="580" height="444" src="http://voto-2020.test/app/uploads/2020/10/myvote-myvoice.png" alt="" class="wp-image-38" srcset="http://voto-2020.test/app/uploads/2020/10/myvote-myvoice.png 580w, http://voto-2020.test/app/uploads/2020/10/myvote-myvoice-300x230.png 300w" sizes="(max-width: 580px) 100vw, 580px" /></figure>
+</div>
+</div>
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<p><strong><em>Voto 2020</em></strong> is a documentary project profiling distinct voices in the Latino community and their work and passion to empower other Latinos to become politically active and vote. Because they rank at the top of the list in terms of Latino eligible voters, we’ll look at stories in Texas, Florida, and Arizona on the local level. Each of these films highlight people who, driven by an issue important to them, are making a difference in their community.</p>
+</div></div>
+</section>          </main>
+</div>
+</div>
+    <footer class="content-info">
+<div class="container">
+<h3>About the Project</h3>
+<section class="widget text-4 widget_text">			<div class="textwidget"><p>Voto 2020 is a production of <a href="http://www.migalvarez.com" target="_blank" rel="noopener noreferrer">¡Aguas! Films</a>.<br data-rich-text-line-break="true" />This series was made possible with a grant from <a href="https://www.houstoninaction.org" target="_blank" rel="noopener noreferrer">Houston In Action</a>.</p>
+<p>For more information on where to vote, <a href="https://www.vote.org/polling-place-locator/" target="_blank" rel="noreferrer noopener">click here</a>.<br data-rich-text-line-break="true" />Para obtener más información sobre dónde votar, <a href="https://p2a.co/LhwY4SZ" target="_blank" rel="noreferrer noopener">visita aquí</a>.</p>
+</div>
+</section>    <div class="social">
+<a target="_blank" href="https://instagram.com/voto2020stories"><i class="fab fa-instagram"></i></a>
+<a target="_blank" href="https://facebook.com/voto2020stories"><i class="fab fa-facebook-square"></i></a>
+<a target="_blank" href="https://twitter.com/voto2020stories"><i class="fab fa-twitter-square"></i></a>
+</div>    <div id="partners">
+<h3>Partner Organizations</h3>
+<div class="wrap">
+<section class="widget media_image-2 widget_media_image"><a href="https://www.mifamiliavota.org/"><img width="300" height="195" src="http://voto-2020.test/app/uploads/2020/10/MFV-CMYK-Logo-6-300x195.png" class="image wp-image-29  attachment-medium size-medium" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="http://voto-2020.test/app/uploads/2020/10/MFV-CMYK-Logo-6-300x195.png 300w, http://voto-2020.test/app/uploads/2020/10/MFV-CMYK-Logo-6-768x500.png 768w, http://voto-2020.test/app/uploads/2020/10/MFV-CMYK-Logo-6.png 841w" sizes="(max-width: 300px) 100vw, 300px" /></a></section><section class="widget media_image-3 widget_media_image"><a href="https://www.iamanimmigrant.com/"><img width="300" height="143" src="http://voto-2020.test/app/uploads/2020/10/iaai-logo-300x143.png" class="image wp-image-53  attachment-medium size-medium" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="http://voto-2020.test/app/uploads/2020/10/iaai-logo-300x143.png 300w, http://voto-2020.test/app/uploads/2020/10/iaai-logo.png 530w" sizes="(max-width: 300px) 100vw, 300px" /></a></section>      </div>
+</div>
+</div>
+</footer>
+<script type='text/javascript' src='http://voto-2020.test/app/themes/voto2020/dist/scripts/main.js' id='sage/main.js-js'></script>
+<script type='text/javascript' src='http://voto-2020.test/wp/wp-includes/js/wp-embed.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 1.7398397922516 seconds, on 22-10-20 14:51:36 -->

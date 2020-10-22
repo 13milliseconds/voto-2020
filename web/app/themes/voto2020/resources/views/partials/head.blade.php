@@ -14,6 +14,9 @@
     gtag('config', 'UA-74357159-24');
   </script>
 
+  {{-- FontAwesome --}}
+  <script src="https://kit.fontawesome.com/3c7d531bb6.js" crossorigin="anonymous"></script>
+
   {{-- Favicon --}}
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/favicon/apple-icon-57x57.png')">
   <link rel="apple-touch-icon" sizes="60x60" href="@asset('images/favicon/apple-icon-60x60.png')">

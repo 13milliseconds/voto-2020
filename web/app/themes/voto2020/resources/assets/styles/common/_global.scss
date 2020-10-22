@@ -27,6 +27,19 @@ body{
     height: auto;
 }
 
+//Social
+
+.social{
+    margin-top: 10px;
+    font-size: 1.2em;
+    
+    a{
+        color: theme-color(white);
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
 // Fonts
 @font-face {
     font-family: 'Franklin Gothic';
